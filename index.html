@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Event Countdown Timer</h1>
+
+      <label for="eventDate">Event Date:</label>
+      <input type="date" id="eventDate" />
+      <label for="eventDescription">Event Description:</label>
+      <input type="text" id="eventDescription" />
+      <br>
+      <button onclick="addEvent()">Add Event</button>
+      <br />
+
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Time Remaining</th>
+        </tr>
+      </thead>
+      <tbody id="eventTableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
